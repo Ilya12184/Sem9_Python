@@ -15,11 +15,4 @@ def start(message):
             bot.send_photo(message.chat.id, f)
             time.sleep(60*30)
 
-# @bot.message_handler(content_types=['text'])
-# def choise(poz_neg):
-#     if poz_neg.text == 'Нет':
-#         bot.send_message(poz_neg.chat.id, 'Ужас!')
-#     elif poz_neg.text == 'Да':
-#         bot.send_message(poz_neg.chat.id, 'Красавчик, продолжай в том же духе!')
-
 bot.polling(none_stop=True)
